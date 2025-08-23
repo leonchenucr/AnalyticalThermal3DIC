@@ -1,0 +1,23 @@
+# Core scientific computing
+numpy>=1.21.0
+scipy>=1.7.0
+
+# Finite element method
+dolfinx>=0.6.0
+fenics-dolfinx>=0.6.0
+
+# Mesh generation
+gmsh>=4.8.0
+
+# Parallel computing
+mpi4py>=3.1.0
+
+# Visualization
+matplotlib>=3.5.0
+
+# Linear algebra
+petsc4py>=3.17.0
+
+# Optional: for better performance
+# numba>=0.56.0
+# cupy-cuda11x>=10.0.0  # if using CUDA 
