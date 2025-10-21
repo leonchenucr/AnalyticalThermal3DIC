@@ -43,9 +43,9 @@ x = (np.linspace(0, b, num_l+1)[:-1] + np.linspace(0, b, num_l+1)[1:])/2
 y = (np.linspace(0, a, num_l+1)[:-1] + np.linspace(0, a, num_l+1)[1:])/2
 X, Y = np.meshgrid(x, y) 
 
-data_g = np.loadtxt('E:/hot/multi-layer/shuju/comsol_s8_pd_1.txt', delimiter=',')*0.1   
-data_f = np.loadtxt('E:/hot/multi-layer/shuju/combined_fd3.txt', delimiter=' ') 
-data = np.loadtxt('E:/hot/multi-layer/V2/sr2.7.txt')
+data_g = np.loadtxt('comsol_s8_pd_1.txt', delimiter=',')*0.1   
+data_f = np.loadtxt('combined_fd3.txt', delimiter=' ') 
+data = np.loadtxt('sr2.7.txt')
 
 
 cos_mx = np.zeros((num_eigen, num_l))  
@@ -394,7 +394,7 @@ ax1.set_zlabel('z (m)', fontsize=12, rotation=90)
 ax1.set_box_aspect(aspect_ratio)
 
 plt.tight_layout()
-plt.savefig('E:/hot/multi-layer/shuju/calculated_temperature_modified_bc_11layers6.png', dpi=300, bbox_inches='tight')
+plt.savefig('calculated_temperature_modified_bc_11layers6.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 # COMSOL temperature field visualization
@@ -417,7 +417,7 @@ ax2.set_zlabel('z (m)', fontsize=12, rotation=90)
 ax2.set_box_aspect(aspect_ratio)
 
 plt.tight_layout()
-plt.savefig('E:/hot/multi-layer/shuju/comsol_temperature_optimized_11layers6.png', dpi=300, bbox_inches='tight')
+plt.savefig('comsol_temperature_optimized_11layers6.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 # Error distribution visualization
@@ -443,5 +443,6 @@ ax3.set_zlabel('z (m)', fontsize=12, rotation=90)
 ax3.set_box_aspect(aspect_ratio)
 
 plt.tight_layout()
-plt.savefig('E:/hot/multi-layer/shuju/error_distribution_modified_bc_11layers6.png', dpi=300, bbox_inches='tight')
+plt.savefig('error_distribution_modified_bc_11layers6.png', dpi=300, bbox_inches='tight')
+
 plt.show()
